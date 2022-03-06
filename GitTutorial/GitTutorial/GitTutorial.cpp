@@ -2,6 +2,7 @@
 //
 
 #include<string>
+#include<iostream>
 #include<cstdlib>
 #include<ctime>
 
@@ -10,7 +11,7 @@ bool Guess(int number) {
 }
 int main()
 {
-
+	
 }
 // 執行程式: Ctrl + F5 或 [偵錯] > [啟動但不偵錯] 功能表
 // 偵錯程式: F5 或 [偵錯] > [啟動偵錯] 功能表
