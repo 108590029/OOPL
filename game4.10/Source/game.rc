@@ -66,7 +66,7 @@ IDB_BALL                BITMAP                  "..\\res\\ball.bmp"
 
 IDB_ERASER1             BITMAP                  "..\\res\\eraser1.bmp"
 
-IDB_BACKGROUND          BITMAP                  "..\\res\\ntutcsie.bmp"
+IDB_BACKGROUND1         BITMAP                  "..\\res\\backgrou.bmp"
 
 IDB_CORNER              BITMAP                  "..\\res\\corner.bmp"
 
@@ -106,7 +106,47 @@ IDB_LOADING             BITMAP                  "..\\res\\loading.bmp"
 
 IDB_PORING              BITMAP                  "..\\res\\bitmap3.bmp"
 
-IDB_BITMAP5             BITMAP                  "C:\\Users\\xyz67\\Desktop\\OOPL\\game4.10\\RES\\player.bmp"
+IDB_PLAYER              BITMAP                  "..\\RES\\player.bmp"
+
+IDB_12                  BITMAP                  "..\\RES\\l1.bmp"
+
+IDB_ST                  BITMAP                  "..\\RES\\play game_1.bmp"
+
+IDB_SELECT              BITMAP                  "..\\RES\\select.bmp"
+
+IDB_M1_1                BITMAP                  "..\\RES\\monster1_1.bmp"
+
+IDB_M1_2                BITMAP                  "..\\RES\\monster1_2.bmp"
+
+IDB_M1_3                BITMAP                  "..\\RES\\monster1_3.bmp"
+
+IDB_M1_4                BITMAP                  "..\\RES\\monster1_4.bmp"
+
+IDB_M2_2                BITMAP                  "..\\RES\\monster2_1.bmp"
+
+IDB_M2_1                BITMAP                  "..\\RES\\monster2_2.bmp"
+
+IDB_PLAYER_FLY          BITMAP                  "..\\RES\\fly.bmp"
+
+IDB_PLAYER_LEFT         BITMAP                  "..\\RES\\player_2.bmp"
+
+IDB_PLAYER_RIGHT        BITMAP                  "..\\RES\\player_3.bmp"
+
+IDB_PLAYER_ATTACK1      BITMAP                  "..\\RES\\player_4.bmp"
+
+IDB_PLAYER_ATTACK2      BITMAP                  "..\\RES\\player_4_1.bmp"
+
+IDB_PLAYER_DOWN         BITMAP                  "C:\\Users\\xyz67\\Desktop\\OOPL\\game4.10\\RES\\player_down.bmp"
+
+IDB_PLAYER_UP           BITMAP                  "C:\\Users\\xyz67\\Desktop\\OOPL\\game4.10\\RES\\player_up.bmp"
+
+IDB_LE1                 BITMAP                  "C:\\Users\\xyz67\\Desktop\\OOPL\\game4.10\\RES\\Level1.bmp"
+
+IDB_LE2                 BITMAP                  "C:\\Users\\xyz67\\Desktop\\OOPL\\game4.10\\RES\\Level2.bmp"
+
+IDB_LE3                 BITMAP                  "C:\\Users\\xyz67\\Desktop\\OOPL\\game4.10\\RES\\Level3.bmp"
+
+IDB_LE4                 BITMAP                  "C:\\Users\\xyz67\\Desktop\\OOPL\\game4.10\\RES\\Level4.bmp"
 
 
 /////////////////////////////////////////////////////////////////////////////

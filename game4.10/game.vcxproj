@@ -258,9 +258,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\audio.cpp" />
-    <ClCompile Include="Source\CBall.cpp" />
-    <ClCompile Include="Source\CBouncingBall.cpp" />
-    <ClCompile Include="Source\CEraser.cpp" />
     <ClCompile Include="Source\game.cpp">
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -281,6 +278,8 @@
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='UnitTest|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
+    <ClCompile Include="Source\monster.cpp" />
+    <ClCompile Include="Source\player1.cpp" />
     <ClCompile Include="Source\StdAfx.cpp">
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -304,13 +303,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\audio.h" />
-    <ClInclude Include="Source\CBall.h" />
-    <ClInclude Include="Source\CBouncingBall.h" />
-    <ClInclude Include="Source\CEraser.h" />
     <ClInclude Include="Source\game.h" />
     <ClInclude Include="Source\gameDoc.h" />
     <ClInclude Include="Source\gameView.h" />
     <ClInclude Include="Source\MainFrm.h" />
+    <ClInclude Include="Source\monster.h" />
+    <ClInclude Include="Source\player1.h" />
     <ClInclude Include="Source\Resource.h" />
     <ClInclude Include="Source\StdAfx.h" />
     <ClInclude Include="Source\gamelib.h" />
@@ -324,9 +322,33 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
+    <Image Include="res\backgrou.bmp" />
     <Image Include="res\bitmap3.bmp" />
     <Image Include="res\bitmap4.bmp" />
+    <Image Include="res\bitmap6.bmp" />
+    <Image Include="res\bmp00001.bmp" />
+    <Image Include="RES\fly.bmp" />
+    <Image Include="RES\l1.bmp" />
+    <Image Include="RES\Level1.bmp" />
+    <Image Include="RES\Level2.bmp" />
+    <Image Include="RES\Level3.bmp" />
+    <Image Include="RES\Level4.bmp" />
+    <Image Include="RES\monster1_1.bmp" />
+    <Image Include="RES\monster1_2.bmp" />
+    <Image Include="RES\monster1_3.bmp" />
+    <Image Include="RES\monster1_4.bmp" />
+    <Image Include="RES\monster2_1.bmp" />
+    <Image Include="RES\monster2_2.bmp" />
+    <Image Include="RES\play game_1.bmp" />
     <Image Include="RES\player.bmp" />
+    <Image Include="RES\player_2.bmp" />
+    <Image Include="RES\player_3.bmp" />
+    <Image Include="RES\player_4.bmp" />
+    <Image Include="RES\player_4_1.bmp" />
+    <Image Include="RES\player_down.bmp" />
+    <Image Include="RES\player_up.bmp" />
+    <Image Include="RES\select a level_1.bmp" />
+    <Image Include="RES\select.bmp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
