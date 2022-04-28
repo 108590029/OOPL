@@ -9,6 +9,7 @@ namespace game_framework {
 	{
 	public:
 		player1();
+
 		//~monster();
 		void goLeft(bool flag);
 		void goRight(bool flag);
@@ -17,12 +18,13 @@ namespace game_framework {
 		void OnInit();
 		void OnMove();
 		void OnShow();
-		void xy(int x, int y);
+		void xy(int a);
 
 
 	private:
 		int x;
 		int y;
+		int select;
 		CAnimation player_o;
 		CAnimation player_Left;
 		CAnimation player_Right;
@@ -32,7 +34,7 @@ namespace game_framework {
 		char outx[4];
 		char outy[4];
 
-		//CMovingBitmap p;
+		CMovingBitmap p;
 		bool direction;
 		bool isMovingDown;			// 是否正在往下移動
 		bool isMovingLeft;			// 是否正在往左移動

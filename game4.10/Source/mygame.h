@@ -154,7 +154,8 @@ namespace game_framework {
 		CMovingBitmap Background;
 		CMovingBitmap Back;
 		CMovingBitmap Level;
-	};	*/
+	};
+	*/
 
 
 

@@ -7,6 +7,7 @@
 #include "player1.h"
 
 namespace  game_framework {
+
 	player1::player1() {
 
 		x = 10;
@@ -14,12 +15,12 @@ namespace  game_framework {
 		direction = FALSE;
 		isMovingLeft = isMovingRight = isMovingUp = isMovingDown = false;
 	}
-	void player1::xy(int a,int b ) {
-		//x = a;
-		//y = b;
+	void player1::xy(int a ) {
+		select = a;
+
 	}
 	void player1::OnInit(){
-		
+
 		player_o.AddBitmap(IDB_PLAYER, RGB(255, 255, 255));
 		player_Left.AddBitmap(IDB_PLAYER_LEFT, RGB(255, 255, 255));
 		player_Right.AddBitmap(IDB_PLAYER_RIGHT, RGB(255, 255, 255));

@@ -226,6 +226,7 @@ void CGameStateRun::OnInit()  								// 遊戲的初值及圖形設定
 	//
 	//playerX = 830;
 	//playerY = 384;
+	
 	level1.LoadBitmap(IDB_LE1);
 	level2.LoadBitmap(IDB_LE2);
 	level3.LoadBitmap(IDB_LE3);
@@ -233,7 +234,9 @@ void CGameStateRun::OnInit()  								// 遊戲的初值及圖形設定
 	//background1.LoadBitmap(IDB_SELECT);
 	//player.LoadBitmapA(IDB_PLAYER,RGB(255,255,255));
 	monster1.OnInit(100,395);
+
 	p1.OnInit();
+	p1.xy(selectleve);
 	monster2.OnInit(250,395);
 	monster3.OnInit(400, 395);
 	/*
