@@ -12,17 +12,24 @@ namespace game_framework {
 		//~monster();
 		void goleft();
 		void goright();
-		void OnInit(int x ,int y) ;
+		void OnInit(int x ,int y,int s) ;
 		void OnMove();
 		void OnShow();
-		
-
-	private:
+		void over();
+		void die();
+		bool isdie = false;
 		int m_x;
 		int m_y;
-		CAnimation texture;
-		bool direction;
+		int m_s;
 
+	private:
+
+		CAnimation texture;
+		CAnimation texture2;
+		CAnimation m_over;
+		bool direction;
+		bool isover = false;
+		
 
 
 	};

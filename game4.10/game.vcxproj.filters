@@ -126,6 +126,15 @@
     <ClCompile Include="Source\player1.cpp">
       <Filter>MyGame</Filter>
     </ClCompile>
+    <ClCompile Include="Source\fly_monster.cpp">
+      <Filter>MyGame</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\black_monster.cpp">
+      <Filter>MyGame</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\bow.cpp">
+      <Filter>MyGame</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\audio.h">
@@ -159,6 +168,15 @@
       <Filter>MyGame</Filter>
     </ClInclude>
     <ClInclude Include="Source\player1.h">
+      <Filter>MyGame</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\fly_monster.h">
+      <Filter>MyGame</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\black_monster.h">
+      <Filter>MyGame</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\bow.h">
       <Filter>MyGame</Filter>
     </ClInclude>
   </ItemGroup>
@@ -247,6 +265,63 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="RES\Level4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\pause.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\monster_ left1 (1).bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\monster_ left1 (2).bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\monster1_left (1).bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\monster1_left (2).bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\monster3_1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\monster3_2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\monster3_right (1).bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\monster3_right (2).bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\monster2_over.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\logo.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\monster3_over.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\blood.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\bow.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\gameover.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\bow_LIFT.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\score.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\GAME2.ICO">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

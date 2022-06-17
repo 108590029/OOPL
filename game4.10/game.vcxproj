@@ -258,6 +258,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\audio.cpp" />
+    <ClCompile Include="Source\black_monster.cpp" />
+    <ClCompile Include="Source\bow.cpp" />
     <ClCompile Include="Source\game.cpp">
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -279,6 +281,7 @@
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='UnitTest|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <ClCompile Include="Source\monster.cpp" />
+    <ClCompile Include="Source\fly_monster.cpp" />
     <ClCompile Include="Source\player1.cpp" />
     <ClCompile Include="Source\StdAfx.cpp">
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -303,11 +306,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\audio.h" />
+    <ClInclude Include="Source\black_monster.h" />
+    <ClInclude Include="Source\bow.h" />
     <ClInclude Include="Source\game.h" />
     <ClInclude Include="Source\gameDoc.h" />
     <ClInclude Include="Source\gameView.h" />
     <ClInclude Include="Source\MainFrm.h" />
     <ClInclude Include="Source\monster.h" />
+    <ClInclude Include="Source\fly_monster.h" />
     <ClInclude Include="Source\player1.h" />
     <ClInclude Include="Source\Resource.h" />
     <ClInclude Include="Source\StdAfx.h" />
@@ -326,19 +332,37 @@
     <Image Include="res\bitmap3.bmp" />
     <Image Include="res\bitmap4.bmp" />
     <Image Include="res\bitmap6.bmp" />
+    <Image Include="RES\blood.bmp" />
     <Image Include="res\bmp00001.bmp" />
+    <Image Include="RES\bow.bmp" />
+    <Image Include="RES\bow_LIFT.bmp" />
     <Image Include="RES\fly.bmp" />
+    <Image Include="RES\GAME2.ICO" />
+    <Image Include="RES\gameover.bmp" />
+    <Image Include="res\icon1.ico" />
     <Image Include="RES\l1.bmp" />
     <Image Include="RES\Level1.bmp" />
     <Image Include="RES\Level2.bmp" />
     <Image Include="RES\Level3.bmp" />
     <Image Include="RES\Level4.bmp" />
+    <Image Include="RES\logo.bmp" />
     <Image Include="RES\monster1_1.bmp" />
     <Image Include="RES\monster1_2.bmp" />
     <Image Include="RES\monster1_3.bmp" />
     <Image Include="RES\monster1_4.bmp" />
+    <Image Include="RES\monster1_left (1).bmp" />
+    <Image Include="RES\monster1_left (2).bmp" />
     <Image Include="RES\monster2_1.bmp" />
     <Image Include="RES\monster2_2.bmp" />
+    <Image Include="RES\monster2_over.bmp" />
+    <Image Include="RES\monster3_1.bmp" />
+    <Image Include="RES\monster3_2.bmp" />
+    <Image Include="RES\monster3_over.bmp" />
+    <Image Include="RES\monster3_right (1).bmp" />
+    <Image Include="RES\monster3_right (2).bmp" />
+    <Image Include="RES\monster_ left1 (1).bmp" />
+    <Image Include="RES\monster_ left1 (2).bmp" />
+    <Image Include="RES\pause.bmp" />
     <Image Include="RES\play game_1.bmp" />
     <Image Include="RES\player.bmp" />
     <Image Include="RES\player_2.bmp" />
@@ -347,6 +371,7 @@
     <Image Include="RES\player_4_1.bmp" />
     <Image Include="RES\player_down.bmp" />
     <Image Include="RES\player_up.bmp" />
+    <Image Include="RES\score.bmp" />
     <Image Include="RES\select a level_1.bmp" />
     <Image Include="RES\select.bmp" />
   </ItemGroup>

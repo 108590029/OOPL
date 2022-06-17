@@ -15,22 +15,29 @@ namespace game_framework {
 		void goRight(bool flag);
 		void goUp(bool flag);
 		void goDown(bool flag);
-		void OnInit();
+		void OnInit(int a);
 		void OnMove();
 		void OnShow();
-		void xy(int a);
-
-
-	private:
+		int getx();
+		int gety();
+		void setx(int a);
+		void sety(int a);
+		void attack(bool flag);
 		int x;
 		int y;
+		int dir;
+	
+
+	private:
+		
 		int select;
 		CAnimation player_o;
 		CAnimation player_Left;
 		CAnimation player_Right;
 		CAnimation player_Up;
 		CAnimation player_Down;
-		CAnimation player_Attack;
+		CAnimation player_Attack_left;
+		CAnimation player_Attack_right;
 		char outx[4];
 		char outy[4];
 
@@ -40,7 +47,7 @@ namespace game_framework {
 		bool isMovingLeft;			// 是否正在往左移動
 		bool isMovingRight;			// 是否正在往右移動
 		bool isMovingUp;			// 是否正在往上移動
-
+		bool isAttack;
 
 
 	};

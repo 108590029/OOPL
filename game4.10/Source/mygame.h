@@ -22,7 +22,7 @@
  *      1. Add CGameStateInit, CGameStateRun, and CGameStateOver to
  *         demonstrate the use of states.
  *   2005-09-13
- *      Rewrite the codes for CBall and player.
+ *      Rewrite the codes for bow and player.
  *   2005-09-20 V4.2Beta1.
  *   2005-09-29 V4.2Beta2.
  *   2006-02-08 V4.2
@@ -40,7 +40,17 @@
 
 #include "player1.h"
 #include "monster.h"
+#include "fly_monster.h"
+#include "black_monster.h"
+#include "bow.h"
 
+enum AUDIO_ID {				// 定義各種音效的編號
+	AUDIO_MENU,
+	AUDIO_BGM,
+	AUDIO_ATC,
+	AUDIO_ATC_2,
+	AUDIO_JUMP
+};
 
 namespace game_framework {
 	/////////////////////////////////////////////////////////////////////////////
@@ -72,8 +82,8 @@ namespace game_framework {
 		//CMovingBitmap player;
 		//CMovingBitmap background;
 		CMovingBitmap selectL;
-		char outx[4], outy[4];
-		bool cm;
+		
+		
 		
 
 	};
@@ -100,12 +110,20 @@ namespace game_framework {
 		void OnMove();									// 移動遊戲元素
 		void OnShow();									// 顯示這個狀態的遊戲畫面
 	private:
-	//	const int		NUMBALLS;	// 球的總數
+		const int		NUMBOW;	// 球的總數
 		//CMovingBitmap	background;	// 背景圖
 		CMovingBitmap	level1;
 		CMovingBitmap	level2;
 		CMovingBitmap	level3;
 		CMovingBitmap	level4;
+		CMovingBitmap	pause;
+		CMovingBitmap	blood1;
+		CMovingBitmap	blood2;
+		CMovingBitmap	blood3;
+		CMovingBitmap	continueNext;
+		bool stop_game = false;
+		bool leave_game = false;
+		bow *bowa;
 		//CMovingBitmap	help;		// 說明圖
 		//CBall			*ball;		// 球的陣列
 		//CMovingBitmap	corner;		// 角落圖
@@ -114,11 +132,26 @@ namespace game_framework {
 		//CBouncingBall   bball;		// 反覆彈跳的球
 		CMovingBitmap player;
 		int playerX, playerY;
-		monster monster1;
-		monster monster2;
-		monster monster3;
+		monster monster1_1;
+		monster monster1_2;
+		monster monster1_3;
+		monster monster2_1;
+		monster monster2_2;
+		monster monster3_1;
+		monster monster4_1;
 		player1 p1;
-		
+		player1 p2;
+		player1 p3;
+		player1 p4;
+		char outx[4], outy[10];
+		fly_monster fly_monster2_1;
+		fly_monster fly_monster4_1;
+		black_monster black_monster3_1;
+		black_monster black_monster3_2;
+		int time = 0;
+		int bowtime = 100;
+		bool isNext = false;
+
 		
 
 	};
@@ -137,7 +170,8 @@ namespace game_framework {
 		void OnMove();									// 移動遊戲元素
 		void OnShow();									// 顯示這個狀態的遊戲畫面
 	private:
-		int counter;	// 倒數之計數器
+		int counter=100;	// 倒數之計數器
+		CMovingBitmap	over;
 	};
 
 
